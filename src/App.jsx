@@ -10,13 +10,13 @@ import SignUp from "./pages/SignUp";
 
 function App() {
   const router = createBrowserRouter([
-    { path: "/", element: <CollegePage /> },
-    { path: "/", element: <CreateEvent /> },
-    { path: "/", element: <EventsPage /> },
+    { path: "/college-page", element: <CollegePage /> },
+    { path: "/create-page", element: <CreateEvent /> },
+    { path: "/events-page", element: <EventsPage /> },
     { path: "/", element: <LandingPage /> },
-    { path: "/", element: <NotFound /> },
-    { path: "/", element: <SignIn /> },
-    { path: "/", element: <SignUp /> },
+    { path: "/not-found", element: <NotFound /> },
+    { path: "/signin", element: <SignIn /> },
+    { path: "/signup", element: <SignUp /> },
   ]);
 
   return <RouterProvider router={router} />;
