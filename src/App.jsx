@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import CollegePage from "./pages/CollegePage";
 import CreateEvent from "./pages/CreateEvent";
-import EventsPage from "./pages/Eventspage";
+import EventsPage from "./pages/EventsPage";
 import LandingPage from "./pages/LandingPage";
 import NotFound from "./pages/NotFound";
 import SignIn from "./pages/SignIn";
