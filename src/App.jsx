@@ -7,6 +7,7 @@ import LandingPage from "./pages/LandingPage";
 import NotFound from "./pages/NotFound";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
+import Event from "./pages/event";
 
 function App() {
   const router = createBrowserRouter([
@@ -17,6 +18,7 @@ function App() {
     { path: "/not-found", element: <NotFound /> },
     { path: "/signin", element: <SignIn /> },
     { path: "/signup", element: <SignUp /> },
+    { path: "/event", element: <Event /> },
   ]);
 
   return <RouterProvider router={router} />;
