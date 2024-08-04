@@ -7,7 +7,7 @@ const SignIn = () => {
     <div className="grid grid-cols-5 h-screen">
       <div className="col-span-3 flex flex-col justify-center items-center p-5 gap-4 bg-[#F8F8FA]">
         <h1 className="text-xl font-bold mb-2">
-          Event <span className="text-blue-500">Hive</span>
+          Event <span className="text-[#7848F4]">Hive</span>
         </h1>
         <h2 className="text-4xl font-bold mb-6">Sign In to Event Hive</h2>
         <form className="w-full flex flex-col gap-4 max-w-lg">
@@ -43,7 +43,7 @@ const SignIn = () => {
 
           <div className="flex items-center justify-center mb-4 w-1/2 mx-auto">
             <button
-              className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              className="w-full bg-primary hover:bg-primary text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="button"
             >
               Sign In
@@ -70,7 +70,7 @@ const SignIn = () => {
           To keep connected with us, provide us with your information
         </p>
         <Link
-          to="/signin"
+          to="/signup"
           className="text-white bg-gray-500 hover:bg-gray-700 px-6 py-4 rounded-lg"
         >
           Sign Up

@@ -11,7 +11,7 @@ const EventTile = (props) => {
     >
       <div className="absolute inset-0 bg-black opacity-50 rounded-md"></div>
       <div className="relative mx-auto">
-        <button className="align-middle items-center text-white font-light text-lg p-2 bg-blue-600 mb-20 rounded-md flex">
+        <button className="align-middle items-center text-white font-light text-lg p-2 bg-[#7848f4] mb-20 rounded-md flex">
           <ChevronLeftIcon className="w-5 h-5 mr-2" />
           <p>back</p>
         </button>
@@ -33,13 +33,13 @@ const EventTile = (props) => {
               <p className="text-gray-700 text-sm">
                 {props.event.date}, <span>{props.event.time}</span>
               </p>
-              <Link className="text-sm text-blue-700" to="/">
+              <Link className="text-sm text-[#7848f4]" to="/">
                 Add to calendar
               </Link>
-              <button className="bg-blue-500 text-white text-sm p-2 rounded-md hover:bg-blue-900">
+              <button className="bg-[#7848f4] text-white text-sm p-2 rounded-md hover:bg-[#7848f4]">
                 Book now
               </button>
-              <button className="bg-gray-400 text-white text-sm p-2 rounded-md hover:bg-gray-900">
+              <button className="bg-gray-400 text-white text-sm p-2 rounded-md hover:bg-[#7848f4]">
                 Program promoter
               </button>
               <Link className="text-sm text-center text-gray-700" to="/">

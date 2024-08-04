@@ -8,17 +8,24 @@ import NotFound from "./pages/NotFound";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import Event from "./pages/event";
+import { Layout } from "./components/Layout";
 
 function App() {
   const router = createBrowserRouter([
-    { path: "/college-page", element: <CollegePage /> },
-    { path: "/create-page", element: <CreateEvent /> },
-    { path: "/events-page", element: <EventsPage /> },
-    { path: "/", element: <LandingPage /> },
-    { path: "/not-found", element: <NotFound /> },
+    {
+      path: "/",
+      element: <Layout />,
+      children: [
+        { index: true, element: <LandingPage /> },
+        { path: "/college", element: <CollegePage /> },
+        { path: "/create-events", element: <CreateEvent /> },
+        { path: "/events-page", element: <EventsPage /> },
+        { path: "/event", element: <Event /> },
+        { path: "*", element: <NotFound /> },
+      ],
+    },
     { path: "/signin", element: <SignIn /> },
     { path: "/signup", element: <SignUp /> },
-    { path: "/event", element: <Event /> },
   ]);
 
   return <RouterProvider router={router} />;

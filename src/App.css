@@ -1,0 +1,36 @@
+body {
+  background-color: #f1f1f3;
+}
+.custom-nav {
+  color: white; /* Customize the color of the arrows */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Optional: add background color to make the arrows stand out */
+  border-radius: 50%; /* Optional: make the background circular */
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.swiper-button-next.custom-nav {
+  right: 40px; /* Position the next button inside the container */
+}
+
+.swiper-button-prev.custom-nav {
+  left: 40px; /* Position the prev button inside the container */
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px !important;
+}

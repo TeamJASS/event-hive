@@ -5,6 +5,7 @@ import whatsapp from "../../assets/images/whatsapp.png";
 import linkedin from "../../assets/images/linkedin.png";
 import twitter from "../../assets/images/x.png";
 import EventTile from "../../components/EventTile";
+import OtherEvents from "./components/OtherEvents";
 
 const event = {
   name: "Dream world wide in jakatra",
@@ -48,16 +49,16 @@ const Event = () => {
           <div className="flex flex-col gap-4">
             <h4 className="text-xl font-bold">Hours</h4>
             <p className="text-gray-700">
-              Weekdays hour: <span className="text-blue-700">7PM - 10PM</span>
+              Weekdays hour: <span className="text-[#7848f4]">7PM - 10PM</span>
             </p>
             <p className="text-gray-700">
-              Sunday hour: <span className="text-blue-700">7PM - 10PM</span>
+              Sunday hour: <span className="text-[#7848f4]">7PM - 10PM</span>
             </p>
           </div>
           <div className="flex flex-col gap-4">
             <h4 className="text-xl font-bold">Organizer Contact</h4>
             <p className="text-gray-700">
-              Please go to <a className="text-blue-700">www.sneakypeeks.com</a>{" "}
+              Please go to <a className="text-[#7848f4]">www.sneakypeeks.com</a>{" "}
               and refer the FAQ section for more detail
             </p>
           </div>
@@ -98,6 +99,7 @@ const Event = () => {
           </div>
         </div>
       </div>
+      <OtherEvents />
     </div>
   );
 };

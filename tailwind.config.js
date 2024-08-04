@@ -4,6 +4,15 @@ export const content = [
   "./public/index.html",
 ];
 export const theme = {
-  extend: {},
+  extend: {
+    colors: {
+      dark: "#281432",
+      primary: {
+        light: "#bf4596",
+        DEFAULT: "#7848F4",
+        dark: "#7c2b61",
+      },
+    },
+  },
 };
 export const plugins = [];
